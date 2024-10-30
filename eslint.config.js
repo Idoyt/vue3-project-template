@@ -10,13 +10,14 @@ import pluginTypeScript from "@typescript-eslint/eslint-plugin";
 export default defineFlatConfig([
   {
     ...js.configs.recommended,
-    // 忽略代码样式控制的目录
     ignores: [
       "**/.*",
       "dist/**",
       "*.d.ts",
       "public/*",
       "src/assets/**",
+      "src/**/iconfont/**",
+      "android/**",
     ],
     languageOptions: {
       globals: {
